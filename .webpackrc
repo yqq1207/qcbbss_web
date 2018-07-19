@@ -1,0 +1,23 @@
+{
+  "entry": "src/index.js",
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
+  ],
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  },
+  "extraBabelIncludes": ["node_modules/react-lz-editor", "node_modules/redux-logger"],
+  "es5ImcompatibleVersions": true,
+  "ignoreMomentLocale": true,
+  "theme": "./src/theme.js",
+  "html": {
+    "template": "./src/index.ejs"
+  },
+  "publicPath": "/",
+  "disableDynamicImport": true,
+  "hash": true
+}
